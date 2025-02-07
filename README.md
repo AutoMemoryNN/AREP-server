@@ -51,7 +51,7 @@ This project enhances an existing web server that currently supports HTML, JavaS
    ```
 3. **Run the Application:**
    ```sh
-   java -jar target/webframework.jar
+   java -jar .\target\Taller2-1.0-SNAPSHOT.jar
    ```
 
 ## Architecture
