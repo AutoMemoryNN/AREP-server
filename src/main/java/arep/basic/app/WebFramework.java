@@ -9,11 +9,11 @@ import java.util.Map;
 public class WebFramework {
 
     // Mapas para almacenar las rutas registradas para GET y POST
-    private static Map<String, RouteHandler> getRoutes = new HashMap<>();
-    private static Map<String, RouteHandler> postRoutes = new HashMap<>();
+    static Map<String, RouteHandler> getRoutes = new HashMap<>();
+    static Map<String, RouteHandler> postRoutes = new HashMap<>();
 
     // Directorio raíz para archivos estáticos
-    private static String staticFolder = "src/view"; // valor por defecto
+    static String staticFolder = "src/view"; // valor por defecto
 
     /**
      * Método para registrar rutas GET.
