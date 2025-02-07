@@ -65,7 +65,7 @@
           <configuration>
             <archive>
               <manifest>
-                <mainClass>arep.basic.app.App</mainClass>
+                <mainClass>arep.basic.app.WebFramework</mainClass>
               </manifest>
             </archive>
           </configuration>
