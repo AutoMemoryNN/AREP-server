@@ -60,32 +60,32 @@ This project enhances an existing web server that currently supports HTML, JavaS
 - **Static File Serving:** Supports serving HTML, CSS, JS, and images.
 - **Built-in Query Handling:** Extracts query parameters from incoming requests.
 
+## Creating Your Own Endpoints
 
-## Crear tus propios endpoints
-
-Los desarrolladores pueden registrar sus propios endpoints utilizando los métodos `get` y `post` del framework. Ejemplo:
+Developers can register their own endpoints using the framework's `get` and `post` methods. Example:
 
 ```java
-WebFramework.get("/user", (req, res) -> "Información del usuario");
-WebFramework.post("/data", (req, res) -> "Procesando datos");
+WebFramework.get("/user", (req, res) -> "User information");
+WebFramework.post("/data", (req, res) -> "Processing data");
 ```
 
-Para obtener parámetros de una solicitud GET:
+To retrieve parameters from a GET request:
+
 ```java
 WebFramework.get("/greet", (req, res) -> {
     String name = req.getValue("name");
-    return "Hola, " + (name != null ? name : "invitado") + "!";
+    return "Hello, " + (name != null ? name : "guest") + "!";
 });
 ```
 
-Para procesar datos de una solicitud POST:
+To process data from a POST request:
+
 ```java
 WebFramework.post("/submit", (req, res) -> {
     String data = req.getValue("data");
-    return "Datos recibidos: " + data;
+    return "Received data: " + data;
 });
 ```
-
 
 ## Tests
 The project includes unit tests for:
